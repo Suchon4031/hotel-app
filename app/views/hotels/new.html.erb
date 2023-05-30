@@ -1,5 +1,62 @@
 <%= render "header" %>
 
-<div class="hotel-main">
-  <div class>
+<div class="hotel-new-main">
+  <div class="hotel-form">
+    <%= form_with(model: @hotel, local: true) do |f| %>
+
+      <%= render 'shared/error_messages', model: f.object %>
+
+      <%# 商品画像 %>
+      <div class="img-upload">
+        <div class="weight-bold-text">
+          画像
+          <span class="indispensable">必須</span>
+        </div>
+        <div class="click-upload">
+          <p>
+            クリックしてファイルをアップロード
+          </p>
+          <%= f.file_field :image, id:"hotel-image" %>
+        </div>
+      </div>
+      <%# /商品画像 %>
+
+      <div class="new-hotels">
+        <div class="weight-bold-text">
+          施設名
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_area :name, class:"hotels-text", id:"hotel-name", placeholder:"ホテル・旅館名", maxlength:"40" %>
+
+        <div class="hotel-address">
+          <div class="hotel-prefecture">
+            <div class="weight-bold-text">
+              都道府県
+              <span class="indispensable">必須</span>
+            </div>
+            <%= f.collection_select(:prefecture_id, Prefecture.all, :id, :name, {}, {class:"select-box", id:"hotel-prefecture"}) %>
+          </div>
+          <div class="hotel-city">
+            <div class="weight-bold-text">
+              市町村
+              <span class="indispensable">必須</span>
+            </div>
+            <%= f.text_area :city, class:"hotels-text", id:"hotel-city", placeholder:"例）横浜市中区" %>
+          </div>
+        </div>
+
+        <div class="items-explain">
+          <div class="weight-bold-text">
+            フリーコメント
+          </div>
+          <%= f.text_area :text, class:"hotels-text", id:"hotel-text", placeholder:"例）清潔感があり過ごしやすい" ,rows:"7" ,maxlength:"1000" %>
+        </div>
+      </div>
+
+      <div class="create-btn-contents">
+        <%= f.submit "投稿する" ,class:"create-btn" %>
+        <%=link_to '戻る', root_path, class:"back-btn" %>
+      </div>
+    <% end %>
+  </div>
 </div>
