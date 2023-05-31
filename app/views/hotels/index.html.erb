@@ -1,9 +1,28 @@
 <%= render "header" %>
 
-<main class="main">
-  <div class="inner">
-    <div class="card__wrapper">
-      <%= render partial:"hotel", collection: @hotels %>
-    </div>
+<div class="main">
+  <div class="lists">
+    <ul class='hotel-lists'>
+      <%  @hotels.each do |hotel| %>
+        <li class='list'>
+          <div class='hotel-img-content'>
+            <%= link_to hotels_path(hotel) do %>
+              <%= image_tag hotel.image, class: "hotel-img" %>
+            <% end %>
+          </div>
+          <div class='hotel-info'>
+            <div class="hotels-name">
+              <%= link_to hotel.name, hotels_path(hotel), class:"hotel-name" %>
+            </div>
+            <div class='hotel-address'>
+              <span><%= hotel.prefecture.name %>  <%= hotel.city %></span>
+            </div>
+            <div class="user-name">
+              <%= hotel.user.nickname %>
+            </div>
+          </div>
+        </li>
+      <% end %>
+    </ul>
   </div>
-</main>
+</div>
