@@ -8,6 +8,9 @@
     <div class="hotel-show-address">
       <%= @hotel.prefecture.name %>  <%= @hotel.city %>
     </div>
+    <div class="hotel-show-nickname">
+      <%= @hotel.user.nickname %>
+    </div>
     <div class="hotel-contents">
       <%= image_tag @hotel.image, class:"hotel-show-image"%>
     </div>

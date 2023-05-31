@@ -23,7 +23,15 @@
  font-size: 18px;
  color: darkgray;
  text-align: center;
- margin-bottom: 30px;
+ margin-bottom: 10px;
+}
+
+.hotel-show-nickname{
+  width: 700px;
+  font-size: 15px;
+  color: darkgray;
+  margin-bottom: 20px;
+  text-align: end;
 }
 
 .hotel-contents{
