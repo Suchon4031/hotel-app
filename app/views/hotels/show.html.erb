@@ -1,0 +1,18 @@
+<%= render "header" %>
+
+<div class="hotel-show-main">
+  <div class="hotel-show">
+    <div class="hotel-show-name">
+      <%= @hotel.name%>
+    </div>
+    <div class="hotel-show-address">
+      <%= @hotel.prefecture.name %>  <%= @hotel.city %>
+    </div>
+    <div class="hotel-contents">
+      <%= image_tag @hotel.image, class:"hotel-show-image"%>
+    </div>
+    <div class="hotel-show-text">
+      <%= @hotel.text %>
+    </div>
+  </div>
+</div>

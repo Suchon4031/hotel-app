@@ -6,7 +6,7 @@
   height: 120px;
   width: 100vw;
   display: flex;
-  background-color: beige;
+  background-color: burlywood;
   align-content: center;
   justify-content: space-between;
   padding: 20px 40px;
@@ -20,7 +20,7 @@
 .title{
   font-size: 50px;
   font-weight: bold;
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
@@ -41,7 +41,7 @@
 .user-nickname{
   font-size: 20px;
   font-weight: bold;
-  color: black;
+  color: white;
   text-decoration: none;
   margin-right: 30px;
   line-height: 100%;
@@ -50,7 +50,7 @@
 .logout{
   font-size: 20px;
   font-weight: bold;
-  color: black;
+  color: white;
   text-decoration: none;
   margin-right: 30px;
 }
