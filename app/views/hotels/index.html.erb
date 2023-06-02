@@ -7,7 +7,7 @@
         <li class='list'>
           <div class='hotel-img-content'>
             <%= link_to hotel_path(hotel) do %>
-              <%= image_tag hotel.image, class: "hotel-img" %>
+              <%= image_tag hotel.images[0], class: "hotel-img" %>
             <% end %>
           </div>
           <div class='hotel-info'>

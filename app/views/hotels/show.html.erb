@@ -11,8 +11,12 @@
     <div class="hotel-show-nickname">
       <%= @hotel.user.nickname %>
     </div>
-    <div class="hotel-contents">
-      <%= image_tag @hotel.image, class:"hotel-show-image"%>
+    <div class="hotel-show-images">
+      <% @hotel.images[0..-1].each do |image| %>
+        <div class="hotel-show-image">
+          <%= image_tag image %>
+        </div>
+      <%end%>
     </div>
     <div class="hotel-show-text">
       <%= @hotel.text %>

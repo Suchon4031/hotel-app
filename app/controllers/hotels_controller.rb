@@ -23,6 +23,6 @@ class HotelsController < ApplicationController
 
   private
   def hotel_params
-    params.require(:hotel).permit(:image, :name, :prefecture_id, :city, :text).merge(user_id: current_user.id)
+    params.require(:hotel).permit(:name, :prefecture_id, :city, :text, {images: []}).merge(user_id: current_user.id)
   end
 end

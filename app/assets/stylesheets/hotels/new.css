@@ -1,4 +1,25 @@
-.preview-image{
+/**************************
+画像プレビュー
+***************************/
+#previews{
+  display: flex;
+}
+
+.preview{
+  margin-right: 30px;
+}
+
+.image-delete-button {
+  text-align: center;
+  border: solid 1px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+
+
+
+img{
   height: 150px;
   width: 150px;
   object-fit: contain;
