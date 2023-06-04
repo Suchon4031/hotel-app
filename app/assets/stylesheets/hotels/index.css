@@ -34,7 +34,7 @@
 .hotel-img{
   height: 250px;
   width: 350px;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .hotel-info{
