@@ -1,24 +1,45 @@
-# README
+# アプリケーション名
+StaySnap
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# アプリケーション概要
+ホテル情報を写真メインで共有することで、よりリアルな状態を確認できる。
 
-Things you may want to cover:
+# URL
+http://
 
-* Ruby version
+# テスト用アカウント
+・Basic認証ID：<br>
+・Basic認証パスワード：<br>
+・メールアドレス：<br>
+・パスワード：<br>
 
-* System dependencies
+# 利用方法
+## ホテル情報投稿
+1.トップページのヘッダーからユーザー新規登録を行う。<br>
+2.投稿ボタンから、ホテル情報（写真、施設名、都道府県名、市町村名、コメント）を投稿する<br>
 
-* Configuration
+# アプリケーションを作成した背景
+日頃ホテルを予約する際に、予約サイトで写真やプランを確認し予約することが多いが、予約サイトの写真はホテル側の宣伝素材であるため、実際に行ってみるとイメージと違ったということがあった。ユーザーが撮影した写真を共有すれば、よりリアルな様子がわかり、目的や理想に合った宿泊施設が選択できると考え、写真メインのホテル情報を投稿・共有するアプリケーションを開発することにした。
 
-* Database creation
+# 洗い出した要件
 
-* Database initialization
+# 実装した機能についての画像やGIFおよびその説明
 
-* How to run the test suite
+# データベース設計
 
-* Services (job queues, cache servers, search engines, etc.)
+# 画面遷移図
 
-* Deployment instructions
+# 開発環境
+・Ruby
+・javascript
+・slick
+・Jquery
 
-* ...
+# ローカルでの動作方法
+以下のコマンドを順に実施<br>
+% git clone ~~~~~~~~~~~<br>
+% cd ~~~~~~~~~~~<br>
+% bundle install
+% yarn install
+
+# 工夫したポイント
