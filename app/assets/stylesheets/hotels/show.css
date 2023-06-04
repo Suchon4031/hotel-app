@@ -3,13 +3,15 @@
 }
 
 .hotel-show-main{
+  height: 100vh;
+  width: 100vw;
   display: flex;
   justify-content: center;
   margin-top: 80px;
 }
 
 .hotel-show{
-  width: 900px;
+  width: 1200px;
   justify-content: center;
   padding: 20px;
   margin-bottom: 80px;
@@ -50,4 +52,106 @@
   font-size: 18px;
   color: darkgray;
   text-align: center;
+}
+
+/*********************************
+スライド
+*********************************/
+.hotel-show-images {
+  
+  height: 1000px;
+}
+
+.hotel-show-image .slick-slide {
+  margin: 0 60px;
+  padding: 60px 0;
+  position: relative;
+}
+
+.hotel-show-image .slick-slide .slide-img{
+  width: 600px;
+  height: 400px;
+  transition: all 0.6s ease 0.4s;
+    opacity: 0.8;
+  box-shadow: 7px 7px 14px -5px #666;
+  overflow: hidden;
+}
+
+.hotel-show-image .slick-slide .slick-current .slick-img{
+  transform: block;
+  opacity: 1;
+}
+
+.hotel-show-image .slick-slide, .slide-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.hotel-show-image .slick-arrow{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+  border: none;
+  font-size: 0;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  transform: translateY(-50%);
+  filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+}
+
+.hotel-show-image .slick-arrow::before{
+  content: '';
+  display: block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #09000d;
+  border-width: 3px 3px 0 0;
+  position: absolute;
+  top: 24px;
+  transform: rotate(45deg);
+}
+
+.hotel-show-image .slick-next {
+  right: 0;
+}
+
+.hotel-show-image .slick-prev {
+  left: 0;
+}
+
+.hotel-show-image .slick-next::before {
+  left: 20px;
+}
+
+.hotel-show-image .slick-prev::before {
+  border-width: 0 0 3px 3px;
+  right: 22px;
+}
+
+.dots .slick-dots {
+  text-align: center;
+}
+.dots .slick-dots li {
+  display: inline-block;
+}
+.dots .slick-dots button {
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 6px;
+  font-size: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  background: #bcbcbc;
+  border-radius: 50%;
+}
+.dots .slick-dots .slick-active button {
+  background: #0a467d;
 }
