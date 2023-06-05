@@ -8,11 +8,21 @@
   display: flex;
   background-color: burlywood;
   align-content: center;
-  justify-content: space-between;
-  padding: 20px 40px;
+  
+  
+}
+
+.header-left{
+  width: 50%;
+  padding-left: 50px;
+}
+
+.header-right{
+  width: 50%;
 }
 
 .header-title{
+  height: 100%;
   display: flex;
   align-items: center;
 }
@@ -26,8 +36,8 @@
 
 .nav{
   align-content: center;
-  justify-content: space-between;
-  height: 100px;
+  justify-content: end;
+  height: 100%;
   display: flex;
 }
 
@@ -35,6 +45,7 @@
   height: 100%;
   display: flex;
   align-items: center;
+  margin-right: 30px;
 }
 .new-btn{
   height: 40px;
@@ -53,43 +64,32 @@
 }
 
 .loglist{
-  height: 50px;
-  line-height: 50px;
   display: flex;
-  list-style: none;
-  align-items: end;
+  justify-content: center;
+  align-items: center;
 }
 
 .user-nickname{
+  margin-right: 30px;
+}
+
+.link-text{
+  display: inline-block;
   font-size: 20px;
   font-weight: bold;
   color: white;
   text-decoration: none;
-  margin-right: 30px;
   line-height: 100%;
 }
 
 .logout{
-  font-size: 20px;
-  font-weight: bold;
-  color: white;
-  text-decoration: none;
   margin-right: 30px;
 }
 
 .login{
-  font-size: 20px;
-  font-weight: bold;
-  color: white;
-  text-decoration: none;
   margin-right: 30px;
-  line-height: 100%;
 }
 
 .sign-up{
-  font-size: 20px;
-  font-weight: bold;
-  color: white;
-  text-decoration: none;
   margin-right: 30px;
 }
