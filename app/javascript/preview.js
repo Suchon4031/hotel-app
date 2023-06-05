@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
   if (!postForm) return null;
 
-  const imageLimits = 3;
+  const imageLimits = 6;
 
 
   // プレビュー画像を生成・表示する関数
