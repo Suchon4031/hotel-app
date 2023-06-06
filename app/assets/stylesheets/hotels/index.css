@@ -8,8 +8,8 @@
   display: flex;
   justify-content: center;
 }
+
 .hotel-lists{
-  width: 90vw;
   display: flex;
   flex-wrap: wrap;
 }
@@ -20,7 +20,7 @@
 
 .list{
   list-style: none;
-  margin-right: 30px;
+  margin: 0 15px;
   margin-bottom: 30px;
 }
 
