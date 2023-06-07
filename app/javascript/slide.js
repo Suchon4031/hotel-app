@@ -1,5 +1,4 @@
-// $(document).ready(function() {
-  $(window).on('load', function() {
+window.addEventListener('DOMContentLoaded', function(){
   $('.hotel-show-image').slick({
     arrows: true,
     dots: true,
