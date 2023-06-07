@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', function(){
+$(window).on('load', function() {
   $('.hotel-show-image').slick({
     arrows: true,
     dots: true,

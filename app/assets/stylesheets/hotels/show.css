@@ -1,14 +1,14 @@
 
 .hotel-show-main{
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 .hotel-show{
-  width: 1200px;
+  width: 100%;
   justify-content: center;
   padding: 20px;
   margin-bottom: 80px;
@@ -38,7 +38,7 @@
 }
 
 .hotel-contents{
-  height: 500px;
+  height: 800px;
   object-fit: contain;
   display: flex;
   justify-content: center;
@@ -55,8 +55,24 @@
 スライド
 *********************************/
 .hotel-show-images {
-  
-  height: 1000px;
+  display: flex;
+  justify-content: center;
+}
+
+.hotel-show-image{
+  display: inline-block;
+  position: relative;
+  width: 50%;
+  margin: 0;
+  padding: 0  ;
+  height: 500px;
+}
+
+.hotel-show-image > .slick-list,
+.hotel-show-image > .slick-list > .slick-track,
+.hotel-show-image > .slick-list > .slick-track > .slick-slide > div {
+  position: relative;
+  height: 100%;
 }
 
 .hotel-show-image .slick-slide {
@@ -68,18 +84,18 @@
 .hotel-show-image .slick-slide .slide-img{
   width: 600px;
   height: 400px;
-  transition: all 0.6s ease 0.4s;
+  transition: all 0.6s ease;
     opacity: 0.8;
   box-shadow: 7px 7px 14px -5px #666;
   overflow: hidden;
 }
 
-.hotel-show-image .slick-slide .slick-current .slick-img{
+.hotel-show-image .slick-center .slick-img{
   transform: block;
   opacity: 1;
 }
 
-.hotel-show-image .slick-slide, .slide-img img {
+.hotel-show-image .slick-slide .slide-img img {
   display: block;
   width: 100%;
   height: 100%;
@@ -151,4 +167,12 @@
 }
 .dots .slick-dots .slick-active button {
   background: #0a467d;
+}
+
+.dots {
+  height: 470px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
