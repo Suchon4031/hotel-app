@@ -11,16 +11,18 @@
     <div class="hotel-show-nickname">
       <%= @hotel.user.nickname %>
     </div>
+
     <div class="hotel-show-images">
       <div class="hotel-show-image">
         <% @hotel.images[0..-1].each do |image| %>
           <div class ="slide-img">
             <%= image_tag image %>
           </div>
-        <%end%>   
+        <%end%>
       </div>
       <div class="dots"></div>
-    </div>  
+    </div>
+
     <div class="hotel-show-text">
       <%= @hotel.text %>
     </div>
@@ -28,5 +30,5 @@
 </div>
 
 
-<script src="https://code.jquery.com/jquery-3.7.0.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
