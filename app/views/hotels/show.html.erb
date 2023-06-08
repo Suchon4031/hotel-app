@@ -28,6 +28,16 @@
     <div class="hotel-show-text">
       <%= @hotel.text %>
     </div>
+    <% if user_signed_in? && current_user == @hotel.user %>
+      <div class="btns">
+        <div class="edit-btn">
+          <%= link_to "編集", edit_hotel_path(@hotel.id), class:"edit-btn-text" %>
+        </div>
+        <div class="delete-btn">
+          <%= link_to "削除", hotel_path(@hotel.id), method: :delete, class:"delete-btn-text" %>
+        </div>
+      </div>
+    <% end %>
   </div>
 </div>
 
