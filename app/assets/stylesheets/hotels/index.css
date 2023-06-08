@@ -3,7 +3,6 @@
 .main{
   height: 100vh;
   width: 100vw;
-  background-color: white;
   padding-top: 80px;
   display: flex;
   justify-content: center;
@@ -12,6 +11,7 @@
 .hotel-lists{
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .lists{
   width: 80vw;
@@ -48,13 +48,13 @@
   font-size: 20px;
   font-weight: bold;
   text-decoration: none;
-  color: darkgray;
+  color: rgb(58, 58, 57);
 }
 
 .hotel-address{
   font-size: 13px;
   text-decoration: none;
-  color: darkgray;
+  color: rgb(58, 58, 57);
 }
 .users-name{
   text-align: end;
@@ -62,6 +62,6 @@
 }
 .user-name{
   font-size: 13px;
-  color: darkgray;
+  color: rgb(58, 58, 57);
   text-decoration: none;
 }

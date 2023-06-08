@@ -24,9 +24,10 @@
       </div>
       <div class="dots"></div>
     </div>
-
-    <div class="hotel-show-text">
-      <%= @hotel.text %>
+    <div class="text-space">
+      <div class="hotel-show-text">
+        <%= @hotel.text %>
+      </div>
     </div>
     <% if user_signed_in? && current_user == @hotel.user %>
       <div class="btns">
