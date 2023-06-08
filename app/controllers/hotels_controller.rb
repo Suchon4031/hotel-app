@@ -36,6 +36,11 @@ class HotelsController < ApplicationController
     end
   end
 
+  def destroy
+    hotel = Hotel.destroy(params[:id])
+    redirect_to root_path
+  end
+
   private
   def hotel_params
     params.require(:hotel).permit(:name, :prefecture_id, :city, :text, {images: []}).merge(user_id: current_user.id)
