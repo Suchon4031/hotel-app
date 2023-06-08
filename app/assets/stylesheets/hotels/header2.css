@@ -1,0 +1,7 @@
+.header2-main{
+  height: 100px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background-color: burlywood;
+}

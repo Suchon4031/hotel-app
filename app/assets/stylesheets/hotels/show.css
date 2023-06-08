@@ -30,10 +30,14 @@
 }
 
 .hotel-show-nickname{
-  width: 700px;
+  display: flex;
+  justify-content: center;
+}
+
+.nickname-text{
+  width: 500px;
   font-size: 15px;
   color: darkgray;
-  margin-bottom: 20px;
   text-align: end;
 }
 
@@ -85,12 +89,12 @@
   width: 600px;
   height: 400px;
   transition: all 0.6s ease;
-    opacity: 0.8;
+    opacity: 0.5;
   box-shadow: 7px 7px 14px -5px #666;
   overflow: hidden;
 }
 
-.hotel-show-image .slick-center .slick-img{
+.hotel-show-image .slick-center .slide-img{
   transform: block;
   opacity: 1;
 }
