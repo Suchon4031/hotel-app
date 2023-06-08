@@ -59,6 +59,10 @@ img{
   margin-bottom: 30px;
 }
 
+#hotel-name{
+  height: 30px;
+}
+
 .new-hotel-prefecture{
   margin-bottom: 20px;
 }
@@ -67,9 +71,16 @@ img{
   margin-bottom: 30px;
 }
 
+#hotel-city{
+  height: 30px;
+}
+
 .new-hotel-explain{
   margin-bottom: 30px;
 }
+
+
+
 .hotels-text{
   width: 100%;
   margin-top: 5px;
@@ -98,7 +109,7 @@ img{
 .create-btn{
   height: 40px;
   width: 150px;
-  background-color: rgb(225, 78, 78);
+  background-color: rgb(58, 58, 57);
   color: white;
   border: none;
   border-radius: 5px;

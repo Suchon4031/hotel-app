@@ -19,14 +19,11 @@
           <%= f.file_field :images, name: 'hotel[images][]', data: {index: 0}, id:"hotel-image" %>
         </div>
         <div id="previews"></div>
-        <%# <% @images.each do |image| %>
-          <%# <div class="edit-previews" data-index="<%= image.id %>
-            <%# <img class="edit-preview-image" src="<%= image.blob_id %>
-            <%# <div class="image-delete-button">削除</div> %>
-          <%# </div> %>
-        <%# <% end %> 
       </div>
       <%# /商品画像 %>
+
+      
+
 
       <div class="new-hotel">
         <div class="new-hotel-name">
@@ -67,7 +64,7 @@
             <%= f.submit "編集する" ,class:"create-btn" %>
           </div>
           <div class="back-btn">
-            <%=link_to '戻る', root_path, class:"back-btn-text" %>
+            <%=link_to '戻る', hotel_path(@hotel), class:"back-btn-text" %>
           </div>
         </div>
       </div>

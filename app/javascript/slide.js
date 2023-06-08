@@ -8,5 +8,9 @@ $(window).on('load', function() {
     slidesToScroll: 1,
     centerMode: true,
     variableWidth: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    pauseOnFocus: false,
+    pauseOnHover: false,
   });
 });

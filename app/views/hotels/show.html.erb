@@ -10,7 +10,7 @@
     </div>
     <div class="hotel-show-nickname">
       <div class="nickname-text">
-        <%= @hotel.user.nickname %>
+        <%= link_to @hotel.user.nickname, user_path(@hotel.user.id) %>
       </div>
     </div>
 

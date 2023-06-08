@@ -2,13 +2,13 @@
 ログイン画面
 *************************/
 .signin-main{
-  height: 100vh;
+  height: 500px;
   width: 100vw;
   display: flex;
  }
 
  .signin-form{
-  height: 450px;
+  height: 480px;
   width: 600px;
   border: 2px solid darkgray;
   border-radius: 10px;
@@ -30,7 +30,7 @@
 .login-confirm-btn{
   width: 100px;
   height: 50px;
-  background-color: rgb(225, 78, 78);
+  background-color: rgb(58, 58, 57);
   border: none;
   border-radius: 5px;
   color: white;
