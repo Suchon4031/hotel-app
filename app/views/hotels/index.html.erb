@@ -17,8 +17,8 @@
             <div class='hotel-address'>
               <span><%= hotel.prefecture.name %>  <%= hotel.city %></span>
             </div>
-            <div class="user-name">
-              <%= hotel.user.nickname %>
+            <div class="users-name">
+              <%= link_to hotel.user.nickname, user_path(hotel.user.id), class:"user-name" %>
             </div>
           </div>
         </li>

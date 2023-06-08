@@ -56,10 +56,12 @@
   text-decoration: none;
   color: darkgray;
 }
-.user-name{
-  font-size: 13px;
-  color: darkgray;
+.users-name{
   text-align: end;
   margin-right: 10px;
 }
-
+.user-name{
+  font-size: 13px;
+  color: darkgray;
+  text-decoration: none;
+}
