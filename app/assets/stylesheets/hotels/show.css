@@ -55,6 +55,42 @@
   text-align: center;
 }
 
+.btns{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.edit-btn{
+  height: 40px;
+  width: 100px;
+  border-radius: 5px;
+  background-color: gray;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.edit-btn-text{
+  font-size: 20px;
+  color: white;
+  line-height: 40px;
+  text-decoration: none;
+}
+
+.delete-btn{
+  height: 40px;
+  width: 100px;
+  border-radius: 5px;
+  background-color: gray;
+  text-align: center;
+}
+
+.delete-btn-text{
+  font-size: 20px;
+  color: white;
+  line-height: 40px;
+  text-decoration: none;
+}
 /*********************************
 スライド
 *********************************/
