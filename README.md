@@ -37,7 +37,7 @@ https://staysnap.onrender.com
 # データベース設計
 ![staysnapER](https://github.com/Suchon4031/hotel-app/assets/130965140/7be14f99-37cc-43e7-bd86-863029700720)
 # 画面遷移図
-[![Image from Gyazo](https://i.gyazo.com/5b8807d29421ba7eba3b07a55575b8a7.gif)](https://gyazo.com/5b8807d29421ba7eba3b07a55575b8a7)
+https://gyazo.com/5b8807d29421ba7eba3b07a55575b8a7
 # 開発環境
 ・Ruby<br>
 ・Javascript<br>
