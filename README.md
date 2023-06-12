@@ -25,9 +25,9 @@ https://staysnap.onrender.com
 要件定義シート：https://docs.google.com/spreadsheets/d/1z9l7p-I2ble1Aj1ZKuQybeN_SegJ0scezeKFvtMFD1g/edit#gid=982722306
 # 実装した機能についての画像やGIFおよびその説明
 画像は6枚まで選択でき、投稿画面でプレビューが表示されます<br>
-[![Image from Gyazo](https://i.gyazo.com/96c425eea3f476ac34b2663a2d9fafdb.jpg)](https://gyazo.com/96c425eea3f476ac34b2663a2d9fafdb)
+![96c425eea3f476ac34b2663a2d9fafdb](https://github.com/Suchon4031/hotel-app/assets/130965140/84c9c7d4-dcfc-49f6-9c49-ad716bb2544c)
 投稿詳細ページにて、画像が複数枚ある場合はスライド表示されます<br>
-[![Image from Gyazo](https://i.gyazo.com/5b8807d29421ba7eba3b07a55575b8a7.gif)](https://gyazo.com/5b8807d29421ba7eba3b07a55575b8a7)
+![5b8807d29421ba7eba3b07a55575b8a7](https://github.com/Suchon4031/hotel-app/assets/130965140/2e642574-3971-446c-9a65-01e2d3c1d457)
 # 実装予定の機能
 ・投稿編集画面でもプレビュー表示がされ、画像を一枚ずつ変更、削除できるようにする<br>
 ・施設の市町村を都道府県からの階層カテゴリーにし、投稿の絞り込みができるようにする<br>
@@ -37,7 +37,7 @@ https://staysnap.onrender.com
 # データベース設計
 ![staysnapER](https://github.com/Suchon4031/hotel-app/assets/130965140/7be14f99-37cc-43e7-bd86-863029700720)
 # 画面遷移図
-https://gyazo.com/5b8807d29421ba7eba3b07a55575b8a7
+![staysnapPG](https://github.com/Suchon4031/hotel-app/assets/130965140/c525448f-2ee6-4fa4-846b-d0a7c3a3a2b9)
 # 開発環境
 ・Ruby<br>
 ・Javascript<br>
