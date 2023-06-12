@@ -24,7 +24,10 @@ https://staysnap.onrender.com
 # 洗い出した要件
 要件定義シート：https://docs.google.com/spreadsheets/d/1z9l7p-I2ble1Aj1ZKuQybeN_SegJ0scezeKFvtMFD1g/edit#gid=982722306
 # 実装した機能についての画像やGIFおよびその説明
-
+画像は6枚まで選択でき、投稿画面でプレビューが表示されます<br>
+[![Image from Gyazo](https://i.gyazo.com/96c425eea3f476ac34b2663a2d9fafdb.jpg)](https://gyazo.com/96c425eea3f476ac34b2663a2d9fafdb)
+投稿詳細ページにて、画像が複数枚ある場合はスライド表示されます<br>
+[![Image from Gyazo](https://i.gyazo.com/5b8807d29421ba7eba3b07a55575b8a7.gif)](https://gyazo.com/5b8807d29421ba7eba3b07a55575b8a7)
 # 実装予定の機能
 ・投稿編集画面でもプレビュー表示がされ、画像を一枚ずつ変更、削除できるようにする<br>
 ・施設の市町村を都道府県からの階層カテゴリーにし、投稿の絞り込みができるようにする<br>
@@ -32,14 +35,14 @@ https://staysnap.onrender.com
 ・お気に入り機能
 
 # データベース設計
-
+![staysnapER](https://github.com/Suchon4031/hotel-app/assets/130965140/7be14f99-37cc-43e7-bd86-863029700720)
 # 画面遷移図
-
+![staysnapPG](https://github.com/Suchon4031/hotel-app/assets/130965140/96c6cf01-e953-49aa-aec6-7530cb0b27b8)
 # 開発環境
 ・Ruby<br>
-・javascript<br>
-・slick<br>
-・Jquery
+・Javascript<br>
+・Jquery<br>
+・Slick
 
 # ローカルでの動作方法
 以下のコマンドを順に実施<br>
@@ -49,3 +52,5 @@ https://staysnap.onrender.com
 % yarn install
 
 # 工夫したポイント
+・投稿詳細ページにおいて、投稿された画像が複数枚ある場合は、一覧表示ではなくスライド表示になるようにしました。<br>
+・落ち着いたイメージにしたかったため、ベーシックカラーを基本にしつつ、ぼやけた印象にならないようにしました。
