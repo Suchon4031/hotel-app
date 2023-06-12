@@ -10,7 +10,7 @@ https://staysnap.onrender.com
 # テスト用アカウント
 ・Basic認証ID：SSuser<br>
 ・Basic認証パスワード：3031<br>
-・メールアドレス：test1<br>
+・メールアドレス：test1@com<br>
 ・パスワード：test1dayo<br>
 
 # 利用方法
