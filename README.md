@@ -25,9 +25,9 @@ https://staysnap.onrender.com
 要件定義シート：https://docs.google.com/spreadsheets/d/1z9l7p-I2ble1Aj1ZKuQybeN_SegJ0scezeKFvtMFD1g/edit#gid=982722306
 # 実装した機能についての画像やGIFおよびその説明
 画像は6枚まで選択でき、投稿画面でプレビューが表示されます<br>
-![96c425eea3f476ac34b2663a2d9fafdb](https://github.com/Suchon4031/hotel-app/assets/130965140/84c9c7d4-dcfc-49f6-9c49-ad716bb2544c)
+![96c425eea3f476ac34b2663a2d9fafdb(2)](https://github.com/Suchon4031/hotel-app/assets/130965140/baf3c371-50e1-4340-b6cf-89193a69bd51)
 投稿詳細ページにて、画像が複数枚ある場合はスライド表示されます<br>
-![5b8807d29421ba7eba3b07a55575b8a7](https://github.com/Suchon4031/hotel-app/assets/130965140/2e642574-3971-446c-9a65-01e2d3c1d457)
+![5b8807d29421ba7eba3b07a55575b8a7(2)](https://github.com/Suchon4031/hotel-app/assets/130965140/32535f90-c448-43f6-b0f0-fbc25c7daa9b)
 # 実装予定の機能
 ・投稿編集画面でもプレビュー表示がされ、画像を一枚ずつ変更、削除できるようにする<br>
 ・施設の市町村を都道府県からの階層カテゴリーにし、投稿の絞り込みができるようにする<br>
