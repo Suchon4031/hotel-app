@@ -1,0 +1,18 @@
+.like-btn-space{
+  height: 20px;
+  margin-top: 10px;
+}
+
+.like-btn {
+  width: 25px;
+  height: 30px;
+  font-size: 25px;
+  color: #808080; 
+  }
+ 
+ .unlike-btn {
+  width: 25px;
+  height: 30px;
+  font-size: 25px;
+  color: #e54747;
+  }
