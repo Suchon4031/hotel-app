@@ -1,9 +1,11 @@
-<% if user_signed_in? && hotel.liked_by?(current_user)%>
-  <%=link_to hotel_likes_path(hotel.id),  method: :delete, class: "hotel_likes", remote: true do %>
-    <i class="far fa-heart like-btn"></i>
-  <% end %>
-<% else %>
-  <%=link_to hotel_likes_path(hotel.id), method: :post, class: "hotel_likes", remote: true do %>
-    <i class="fa-solid fa-heart unlike-btn"></i>
+<% if user_signed_in? %>
+  <% if hotel.liked_by?(current_user)%>
+    <%=link_to hotel_likes_path(hotel.id),  method: :delete, class: "hotel_likes", remote: true do %>
+      <i class="far fa-heart like-btn"></i>
+    <% end %>
+  <% else %>
+    <%=link_to hotel_likes_path(hotel.id), method: :post, class: "hotel_likes", remote: true do %>
+      <i class="fa-solid fa-heart unlike-btn"></i>
+    <% end %>
   <% end %>
 <% end %>
