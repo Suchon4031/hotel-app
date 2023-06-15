@@ -11,8 +11,17 @@
             <% end %>
           </div>
           <div class='hotel-info'>
-            <div class="hotels-name">
-              <%= link_to hotel.name, hotel_path(hotel), class:"hotel-name" %>
+            <div class="hotel-info-top">
+              <div class="hotels-name">
+                <%= link_to hotel.name, hotel_path(hotel), class:"hotel-name" %>
+              </div>
+              <div id="like-btn<%= hotel.id %>">
+                <% if user_signed_in? && hotel.liked_by?(current_user)%>
+                  <%=link_to "いいね済", hotel_likes_path(hotel.id),  method: :delete, class: "hotel_likes" %>
+                <% else %>
+                  <%=link_to "いいねする", hotel_likes_path(hotel.id), method: :post, class: "hotel_likes" %>
+                <% end %>
+              </div>
             </div>
             <div class='hotel-address'>
               <span><%= hotel.prefecture.name %>  <%= hotel.city %></span>
