@@ -17,8 +17,13 @@
                 <% end %>
               </div>
               <div class='hotel-info'>
-                <div class="hotels-name">
-                  <%= link_to hotel.name, hotel_path(hotel), class:"hotel-name" %>
+                <div class="hotel-info-top">
+                  <div class="hotels-name">
+                    <%= link_to hotel.name, hotel_path(hotel), class:"hotel-name" %>
+                  </div>
+                  <div id="like-btn<%= hotel.id %>", class="like-btn-space">
+                    <%= render partial: "likes/like", locals: { hotel: hotel } %>
+                  </div>
                 </div>
                 <div class='hotel-address'>
                   <span><%= hotel.prefecture.name %>  <%= hotel.city %></span>
