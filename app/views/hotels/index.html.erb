@@ -16,11 +16,7 @@
                 <%= link_to hotel.name, hotel_path(hotel), class:"hotel-name" %>
               </div>
               <div id="like-btn<%= hotel.id %>">
-                <% if user_signed_in? && hotel.liked_by?(current_user)%>
-                  <%=link_to "いいね済", hotel_likes_path(hotel.id),  method: :delete, class: "hotel_likes" %>
-                <% else %>
-                  <%=link_to "いいねする", hotel_likes_path(hotel.id), method: :post, class: "hotel_likes" %>
-                <% end %>
+                <%= render partial: "likes/like", locals: { hotel: hotel } %>
               </div>
             </div>
             <div class='hotel-address'>
