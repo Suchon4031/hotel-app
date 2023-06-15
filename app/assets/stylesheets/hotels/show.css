@@ -32,13 +32,15 @@ body{
 }
 
 .hotel-show-nickname{
+  width: 700px;
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: end;
 }
 
 .nickname-text{
-  width: 500px;
   text-align: end;
+  margin-right: 30px;
 }
 
 .nickname-text a {

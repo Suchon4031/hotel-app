@@ -12,6 +12,9 @@
       <div class="nickname-text">
         <%= link_to @hotel.user.nickname, user_path(@hotel.user.id) %>
       </div>
+      <div id="like-btn<%= @hotel.id %>", class="like-btn-space2">
+          <%= render partial: "likes/like", locals: { hotel: @hotel } %>
+        </div>
     </div>
 
     <div class="hotel-show-images">
