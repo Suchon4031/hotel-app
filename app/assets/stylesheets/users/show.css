@@ -8,20 +8,34 @@
 
 .user-show-contents{
   font-size: 20px;
-  font-weight: bold;
   color: rgb(58, 58, 57);
 }
 
+.contents-top{
+  display: flex;
+}
 .user-show-name{
+  font-weight: bold;
+  margin-top: 5px;
   margin-bottom: 30px;
   padding-left: 50px;
 }
 
-user-show-name{
-  margin-top: 80px;
+.likes{
+  width: 160px;
+  height: 35px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
   margin-left: 50px;
+  text-align: center;
+  box-shadow: 3px 3px 8px -5px #666;
 }
 
+.to-likes{
+  line-height: 35px;
+  color: rgb(58, 58, 57);
+  text-decoration: none;
+}
 /********************************
 投稿一覧についてはhotels/indexと共通
 ********************************/
