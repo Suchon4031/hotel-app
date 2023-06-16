@@ -2,21 +2,14 @@
 
 <div class="user-show-main">
   <div class="user-show-contents">
-    <div class="contents-top">
-      <div class="user-show-name">
-        <%= @user.nickname %> さんの投稿
-      </div>
-      <% if current_user == @user %>
-      <div class="likes">
-        <%= link_to "いいねした投稿", likes_user_path(@user), class:"to-likes" %>
-      </div>
-      <% end %>
+    <div class="user-show-name">
+      いいねした投稿
     </div>
     <div class="user-show-hotels">
       
       <div class="lists">
         <ul class='hotel-lists'>
-          <%  @hotels.each do |hotel| %>
+          <%  @like_hotels.each do |hotel| %>
             <li class='list'>
               <div class='hotel-img-content'>
                 <%= link_to hotel_path(hotel) do %>

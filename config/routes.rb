@@ -4,5 +4,10 @@ Rails.application.routes.draw do
   resources :hotels do
     resource :likes, only: [:create, :destroy]
   end
-  resources :users, only: [:show]
+  resources :users, only: [:show] do
+    member do
+      get :likes
+    end
+  end
+  
 end
