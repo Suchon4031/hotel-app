@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root to: "hotels#index"
   resources :hotels do
     resource :likes, only: [:create, :destroy]
+    resources :comments, only: :crete
   end
   resources :users, only: [:show] do
     member do
