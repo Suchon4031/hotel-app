@@ -1,8 +1,9 @@
 class CommentsController < ApplicationController
   def create
     @comment = Comment.new(comment_params)
+    @hotel = Hotel.find(params[:hotel_id])
     if @comment.save
-      redirect_to hotel_path(params[:hotel_id])
+      CommentChannel.broadcast_to @hotel, { comment: @comment, user: @comment.user }
     end
   end
 
