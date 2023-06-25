@@ -32,6 +32,28 @@
         <%= @hotel.text %>
       </div>
     </div>
+
+    <div id="comments">
+      <div class="comments-list">
+        <div class="comment-list-top">＜コメント一覧＞</div>
+          <% @hotel.comments.each do |comment| %>
+            <div class="comment">
+              <p class="user-info"><%= comment.user.nickname %>： </p>
+              <p><%= comment.text%></p>
+            </div>
+          <% end %>
+      </div>
+    </div>
+
+    <div class="comment-form">
+      <% if user_signed_in? %>
+        <%= form_with model: [@hotel, @comment], id: "comment-form" do |f| %>
+          <%= f.text_area :text , class: "comment-text"%>
+          <%= f.submit "コメントをする", class: "comment-submit" %>
+        <% end %>
+      <% end %>
+    </div>
+
     <% if user_signed_in? && current_user == @hotel.user %>
       <div class="btns">
         <div class="edit-btn">

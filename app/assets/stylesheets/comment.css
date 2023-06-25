@@ -1,0 +1,51 @@
+#comments{
+  width: 600px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.comment-form{
+  width: 600px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.comment-list-top{
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#comment-form{
+  width: 100%;
+}
+
+.comment-text{
+  height: 60px;
+  width: 600px;
+  display: block;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.comment-submit{
+  height: 40px;
+  width: 140px;
+  display: block;
+  margin: 20px auto 0;
+  background-color: gray;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.comment{
+  display: flex;
+}
+
+.comment p{
+   margin: 0;
+}
+
+.user-info{
+  font-weight: bold;
+}

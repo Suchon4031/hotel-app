@@ -4,6 +4,7 @@ class Hotel < ApplicationRecord
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :prefecture
   has_many :likes
+  has_many :comments
 
   validates :images, presence: true
   validates :images, length: { minimum: 1, maximum: 6, message: "は1枚以上6枚以下にしてください" }

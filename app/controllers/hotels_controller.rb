@@ -20,6 +20,8 @@ class HotelsController < ApplicationController
   end
 
   def show
+    @comments = @hotel.comments.includes(:user)
+    @comment = Comment.new
   end
 
   def edit
