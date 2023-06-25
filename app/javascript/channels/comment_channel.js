@@ -21,7 +21,7 @@ if(location.pathname.match(/\/hotels\/\d/)){
           <p class="user-info">${data.user.nickname}： </p>
           <p>${data.comment.text}</p>
         </div>`
-      const comments = document.getElementById("comments")
+      const comments = document.querySelector(".comments-list")
       comments.insertAdjacentHTML('beforeend', html)
       const commentForm = document.getElementById("comment-form")
       commentForm.reset();
