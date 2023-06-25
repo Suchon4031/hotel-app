@@ -60,6 +60,7 @@ body{
 .text-space{
   display: flex;
   justify-content: center;
+  margin-bottom: 30px;
 }
 
 .hotel-show-text{
